@@ -5,22 +5,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
-    <title>Home</title>
+    <!--Icon next to page title, choose later-->
+    <!-- <link rel="icon" href="../../../../favicon.ico" /> -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>Daniel Martin</title>
+    <!--Custom fonts-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Kaushan+Script"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!--Bootstrap-->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <nav>
-        <button target="#">Home</button> <button>Projects</button>
-        <button>About</button> <button>Contact</button>
-      </nav>
-      <h1>Welcome!</h1>
-      <p>This will be my personal webpage</p>
+      <!-- Navbar content -->
+      <div class="navbar navbar-default bg-dark static-top">
+        <div class="container">
+          <div class="navbar-header">
+            <a href="#" class="navbar-brand d-flex align-items-center"
+              >Daniel Martin</a
+            >
+          </div>
+          <div class="navbar-right-end d-flex justify-content-end">
+            <a href="projects.html" class="navbar d-flex align-items-center"
+              >Projects</a
+            >
+            <a href="about.html" class="navbar d-flex align-items-center"
+              >About</a
+            >
+            <a href="contact.html" class="navbar d-flex align-items-center"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
     </header>
-    <main>
-      <div id="masthead">
-        <img src="img/sandiegobay.jpg" alt="Background image" />
+    <main class="masthead text-white text-center">
+      <div class="overlay">
+        <!-- must figure out how to properly size and style the background image and the text overlayed in front of it-->
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-8 mx-auto">
+            <h1 class="intro mb-5">DANIEL MARTIN</h1>
+            <h4 class="intro-2"><em>software engineer</em></h4>
+            <hr class="intro-split" />
+            <ul id="header-social" class="list-inline social-buttons">
+              <li>
+                <a href="https://twitter.com/bbleds" target="_blank"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://github.com/bbleds" target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/benjamin-bledsoe-6b8584a5"
+                  target="_blank"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </main>
     <footer></footer>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.jQuery ||
+        document.write(
+          '<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"><\/script>'
+        );
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.6/holder.min.js"></script>
   </body>
 </html>
