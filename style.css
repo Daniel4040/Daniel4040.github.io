@@ -1,24 +1,30 @@
-header a {
-  text-decoration: none;
+.navbar-default .navbar-brand {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, cursive;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
   color: white;
 }
 
-body {
-  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.navbar-default .navbar-brand {
-  float: left;
-  font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
-}
-
 .navbar-default .navbar-right-end {
-  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 1px;
-  color: #fff;
+  color: white;
 }
+.navbar-default .navbar-right-end a {
+  text-decoration: none;
+  color: white;
+}
+/* @media (min-width: 48em) {
+  .navbar-default .navbar-brand {
+    float: left;
+  }
+  .navbar-default .navbar-right-end {
+    float: right;
+  }
+} */
 
 .container {
   padding-right: 15px;
@@ -32,8 +38,9 @@ main.masthead {
   background-color: #343a40;
   background: url(img/sandiegobay.jpg) no-repeat center center;
   background-size: cover;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  background-position: center 35%;
+  padding-top: 16rem;
+  padding-bottom: 12rem;
 }
 
 main.masthead .overlay {
@@ -43,7 +50,7 @@ main.masthead .overlay {
   width: 100%;
   top: 0;
   left: 0;
-  opacity: 0.3;
+  opacity: 0.2;
 }
 
 main.container {
@@ -55,31 +62,39 @@ main.container {
 }
 
 .intro {
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 75px;
-  line-height: 75px;
+  font-family: "Tangerine";
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+  text-shadow: 2px 2px 2px rgb(92, 92, 92);
+  font-size: 100px;
+  line-height: 100px;
   margin-bottom: 50px;
 }
 
 .intro-2 {
   font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: italic;
-  font-size: 40px;
+  font-size: 25px;
   line-height: 40px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
+}
+
+.intro-3 {
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 10px;
 }
 
 .intro-split {
-  width: 60%;
-}
-
-hr {
+  width: 70%;
   margin-top: 18px;
   margin-bottom: 18px;
   border: 0;
-  border-top: 2px solid #eee;
+  border-top: 0.5px solid rgb(255, 255, 255);
 }
+
 #header-social {
   position: relative;
 }
@@ -118,6 +133,104 @@ ul.social-buttons {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.fa-twitter {
+/* .fa-twitter {
   content: "\f099";
+} */
+
+.projects {
+  padding-bottom: 10rem;
+}
+
+.projects .container h1 {
+  padding-top: 8rem;
+  padding-bottom: 2rem;
+}
+
+/* .projects .container p:nth-of-type(1) {
+  padding-top: 2rem;
+} */
+
+#proj-heading {
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+.projects-split {
+  width: 100%;
+  padding-top: 2rem;
+  /* padding-bottom: 2rem; */
+  border: 0;
+  border-top: 0.5px solid rgb(175, 175, 175);
+}
+
+.w-100 {
+  /* width: 100% !important; */
+  height: 100% !important;
+  object-fit: cover;
+}
+
+.card-block {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.about-me {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.about-me h1 {
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+}
+
+.about-me-split {
+  width: 100%;
+  border: 0;
+  border-top: 0.5px solid rgb(175, 175, 175);
+  padding-top: 2rem;
+  /* padding-bottom: 6rem; */
+}
+
+#bootstrap-icon {
+  height: 15px;
+}
+
+#tech-logos-1 li i,
+#bootstrap-icon {
+  padding-right: 0.5rem;
+}
+
+.about-me .container p {
+  padding-top: 2rem;
+}
+
+.img-circle {
+  height: 15rem;
+
+  border-radius: 50%;
+}
+
+.contact-me {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background-color: #2e2e2e;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+
+.contact-me a {
+  text-decoration: none;
+  color: white;
+}
+
+#email-split {
+  width: 50%;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  border: 0;
+  border-top: 3px solid rgb(255, 255, 255);
 }

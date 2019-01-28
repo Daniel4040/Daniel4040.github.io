@@ -17,6 +17,7 @@
       integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine" type="text/css"/>
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
       rel="stylesheet"
@@ -47,45 +48,40 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <!-- Navbar content -->
-      <div class="navbar navbar-default bg-dark static-top">
-        <div class="container">
-          <div class="navbar-header">
-            <a href="#" class="navbar-brand d-flex align-items-center"
-              >Daniel Martin</a
-            >
-          </div>
-          <div class="navbar-right-end d-flex justify-content-end">
-            <a href="projects.html" class="navbar d-flex align-items-center"
-              >Projects</a
-            >
-            <a href="about.html" class="navbar d-flex align-items-center"
-              >About</a
-            >
-            <a href="contact.html" class="navbar d-flex align-items-center"
-              >Contact</a
-            >
-          </div>
+    <!-- Navbar content -->
+    <div class="navbar navbar-default bg-dark static-top fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="#" class="navbar-brand d-flex align-items-center"
+            >Home</a
+          >
         </div>
+        <span class="hidden-s"><div class="navbar-right-end d-flex justify-content-end">
+          <a href="#projects" class="navbar d-flex align-items-center"
+            >Projects</a
+          >
+          <a href="#about" class="navbar d-flex align-items-center"
+            >About</a
+          >
+          <a href="#contact" class="navbar d-flex align-items-center"
+            >Contact</a
+          >
+        </div>
+</span>
+        
       </div>
-    </header>
+    </div>
+
     <main class="masthead text-white text-center">
-      <div class="overlay">
-        <!-- must figure out how to properly size and style the background image and the text overlayed in front of it-->
-      </div>
+      <div class="overlay"></div>
       <div class="container">
         <div class="row">
           <div class="col-xl-8 mx-auto">
-            <h1 class="intro mb-5">DANIEL MARTIN</h1>
-            <h4 class="intro-2"><em>software engineer</em></h4>
+            <h1 class="intro mb-5">Daniel Martin</h1>
+            <h6 class="intro-2">Software Developer | Electrical Engineer</h6>
+            <!-- <h6 class="intro-3"></h6> -->
             <hr class="intro-split" />
             <ul id="header-social" class="list-inline social-buttons">
-              <li>
-                <a href="https://twitter.com/danielscript23" target="_blank"
-                  ><i class="fab fa-twitter"></i
-                ></a>
-              </li>
               <li>
                 <a href="https://github.com/daniel4040" target="_blank"
                   ><i class="fab fa-github"></i
@@ -103,7 +99,64 @@
         </div>
       </div>
     </main>
-    <footer></footer>
+    <div class="projects" id="projects">
+      <div class="container col-md-6 mx-auto" id="proj-heading">
+        <h1><strong>PROJECTS</strong></h1>
+        <hr class="projects-split" />
+      <p class="text-muted">
+        <em
+        >A non-comprehensive cross-section of open-source projects I have completed. The source code for each project is also included via a link at the bottom of each description. Check back soon for a growing list as I get a chance to update this section.</em
+        >
+      </p>
+      
+    </div>
+      <div class="container py-3">
+          <div class="card">
+            <div class="row ">
+              <div class="col-md-4">
+                  <img src="img/proj-1-img.jpeg" class="w-100">
+                </div>
+                <div class="col-md-8 px-3">
+                  <div class="card-block px-3">
+                    <h4 class="card-title"><strong>Personal Webpage</strong></h4>
+                    <h6><strong>Summary</strong></h6>
+                    <p class="card-text">My first and most important project on the path to fluency in software development is my own webpage. You are currently looking at the current version, which will likely never be truly finished. I will add additional projects as I complete them, assuming they are public projects. Click on the button below to check out the source code to this page on GitHub, or since you're already here you can simply check the developer console of the brower of your choice!</p>
+                    <p class="card-text"><h6><strong>Technology</strong></h6>
+                      <ul id="tech-logos-1">
+                        <li><i class="fab fa-html5"></i> HTML</li>
+                        <li><i class="fab fa-css3-alt"></i> CSS</li>
+                        <li><img id="bootstrap-icon" src="img/bootstrap-solid.svg" alt="Bootstrap logo"> Bootstrap</li>
+                        <li><i class="fab fa-git-square"></i> Git</li>
+                        <li><i class="fab fa-github"></i> GitHub Pages</li>
+                      </ul>
+                    </p>
+                    <a href="https://github.com/Daniel4040/Daniel4040.github.io" target="_blank" class="btn btn-primary">Source Code</a>
+                  </div>
+                </div>
+      
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    </div>
+    <div class="about-me" id="about">
+      <div class="container col-md-6 mx-auto">
+        <h1><strong>About</strong></h1>
+        <hr class="about-me-split" />
+        <img src="img/self-portrait.jpg" class="img-responsive img-circle" alt="">
+        <p>Welcome! I am currently a practicing electrical engineer with a passion for the world of software and technology. In fact, I've been interested in tech my entire life. It all started with Oregon Trail on the Macintosh, and my intrigue has only grown over the decades! I have a desire to build software of many flavors, from webpages, to robust web apps, even some data analysis web apps for the sports fans out there like myself. Check out some of my work in the 'Projects' section above, and feel free to reach out to me if you have any questions or comments!</p>
+      </div>
+    </div>
+    <div class="contact-me" id="contact" >
+      <div class="col-md-6 mx-auto">
+        <h1><strong>Contact</strong></h1>
+        <hr id="email-split" />
+        <a href="mailto:danielt8642@gmail.com"><i class="far fa-envelope"></i> danielt8642@gmail.com</a>
+        <hr id="email-split" />
+      </div>
+
+    </div>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -125,6 +178,5 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.6/holder.min.js"></script>
   </body>
 </html>
