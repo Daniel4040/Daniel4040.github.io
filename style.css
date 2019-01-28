@@ -1,22 +1,20 @@
-.navbar-default .navbar-brand {
+.navbar a {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, cursive;
+  text-decoration: none;
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 1px;
   color: white;
 }
 
-.navbar-default .navbar-right-end {
+.nav-item {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 1px;
   color: white;
 }
-.navbar-default .navbar-right-end a {
-  text-decoration: none;
-  color: white;
-}
+
 /* @media (min-width: 48em) {
   .navbar-default .navbar-brand {
     float: left;
@@ -26,12 +24,12 @@
   }
 } */
 
-.container {
+/* .container {
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-}
+} */
 
 main.masthead {
   position: relative;
