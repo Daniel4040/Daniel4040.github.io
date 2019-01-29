@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
-    <!--Icon next to page title, choose later-->
-    <!-- <link rel="icon" href="../../../../favicon.ico" /> -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <title>Daniel Martin</title>
     <!--Custom fonts-->
     <link
@@ -17,7 +15,10 @@
       integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine" type="text/css"/>
+    <link 
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Tangerine"
+      type="text/css"/>
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
       rel="stylesheet"
@@ -45,57 +46,29 @@
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous"
     />
+    <!--CSS-->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-          <a class="col-auto mr-auto" href="#">Home</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="col-auto">
-          
-        
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-              
-              <li class="nav-item">
-                <a class="nav-link" href="#projects">Projects</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                  </li>
-            </ul>
-          </div>
-        </div>
-        </nav>
-    <!-- Navbar content -->
-    <!-- <div class="navbar navbar-default bg-dark static-top fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <a href="#" class="navbar-brand d-flex align-items-center"
-            >Home</a
-          >
-        </div>
-        <span class="hidden-s"><div class="navbar-right-end d-flex justify-content-end">
-          <a href="#projects" class="navbar d-flex align-items-center"
-            >Projects</a
-          >
-          <a href="#about" class="navbar d-flex align-items-center"
-            >About</a
-          >
-          <a href="#contact" class="navbar d-flex align-items-center"
-            >Contact</a
-          >
-        </div>
-</span> -->
-        
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
       </div>
-    </div>
-
+    </nav>
     <main class="masthead text-white text-center">
       <div class="overlay"></div>
       <div class="container">
@@ -108,15 +81,21 @@
             <ul id="header-social" class="list-inline social-buttons">
               <li>
                 <a href="https://github.com/daniel4040" target="_blank"
-                  ><i class="fab fa-github"></i
+                ><i class="fab fa-github"></i
                 ></a>
               </li>
               <li>
                 <a
                   href="https://www.linkedin.com/in/danielmartin080/"
                   target="_blank"
-                  ><i class="fab fa-linkedin"></i
+                ><i class="fab fa-linkedin"></i
                 ></a>
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/danielscript23"
+                  target="_blank"
+                ><i class="fab fa-twitter-square"></i></a>
               </li>
             </ul>
           </div>
@@ -127,42 +106,61 @@
       <div class="container col-md-6 mx-auto" id="proj-heading">
         <h1><strong>PROJECTS</strong></h1>
         <hr class="projects-split" />
-      <p class="text-muted">
-        <em
-        >A non-comprehensive cross-section of open-source projects I have completed. The source code for each project is also included via a link at the bottom of each description. Check back soon for a growing list as I get a chance to update this section.</em
-        >
-      </p>
-      
-    </div>
+        <p class="text-muted">
+          <em
+          >A non-comprehensive cross-section of open-source projects I have completed. The source code for each project is also included via a link at the bottom of each description. Check back soon for a growing list as I get a chance to update this section.</em
+          >
+        </p>
+      </div>
       <div class="container py-3">
-          <div class="card">
-            <div class="row ">
-              <div class="col-md-4">
-                  <img src="img/proj-1-img.jpeg" class="w-100">
-                </div>
-                <div class="col-md-8 px-3">
-                  <div class="card-block px-3">
-                    <h4 class="card-title"><strong>Personal Webpage</strong></h4>
-                    <h6><strong>Summary</strong></h6>
-                    <p class="card-text">My first and most important project on the path to fluency in software development is my own webpage. You are currently looking at the current version, which will likely never be truly finished. I will add additional projects as I complete them, assuming they are public projects. Click on the button below to check out the source code to this page on GitHub, or since you're already here you can simply check the developer console of the brower of your choice!</p>
-                    <p class="card-text"><h6><strong>Technology</strong></h6>
-                      <ul id="tech-logos-1">
-                        <li><i class="fab fa-html5"></i> HTML</li>
-                        <li><i class="fab fa-css3-alt"></i> CSS</li>
-                        <li><img id="bootstrap-icon" src="img/bootstrap-solid.svg" alt="Bootstrap logo"> Bootstrap</li>
-                        <li><i class="fab fa-git-square"></i> Git</li>
-                        <li><i class="fab fa-github"></i> GitHub Pages</li>
-                      </ul>
-                    </p>
-                    <a href="https://github.com/Daniel4040/Daniel4040.github.io" target="_blank" class="btn btn-primary">Source Code</a>
-                  </div>
-                </div>
-      
+        <div class="card">
+          <div class="row ">
+            <div class="col-md-4">
+              <img src="img/proj-1-img.jpeg" class="w-100">
+            </div>
+            <div class="col-md-8 px-3">
+              <div class="card-block px-3">
+                <h4 class="card-title"><strong>Personal Webpage</strong></h4>
+                <h6><strong>Summary</strong></h6>
+                <p class="card-text">My first and most important project on the path to fluency in software development is my own webpage. You are currently looking at the current version, which will likely never be truly finished. I will add additional projects as I complete them, assuming they are public projects. Click on the button below to check out the source code to this page on GitHub, or since you're already here you can simply check the developer console of the brower of your choice!</p>
+                <p class="card-text"><h6><strong>Technology</strong></h6>
+                  <ul id="tech-logos-1">
+                    <li><i class="fab fa-html5"></i> HTML</li>
+                    <li><i class="fab fa-css3-alt"></i> CSS</li>
+                    <li><img id="bootstrap-icon" src="img/bootstrap-solid.svg" alt="Bootstrap logo"> Bootstrap</li>
+                    <li><i class="fab fa-git-square"></i> Git</li>
+                    <li><i class="fab fa-github"></i> GitHub Pages</li>
+                  </ul>
+                </p>
+                <a href="https://github.com/Daniel4040/Daniel4040.github.io" target="_blank" class="btn btn-secondary">Source Code</a>
               </div>
             </div>
           </div>
         </div>
-      
+      </div>
+      <div class="container py-3">
+        <div class="card">
+          <div class="row ">
+            <div class="col-md-4">
+              <img src="img/proj-2-img.jpg" class="w-100">
+            </div>
+            <div class="col-md-8 px-3">
+              <div class="card-block px-3">
+                <h4 class="card-title"><strong>Landing Page</strong></h4>
+                <h6><strong>Summary</strong></h6>
+                <p class="card-text">This is a simple landing page that provides a space for user email sign-up that would be useful for small businesses looking to start a newsletter or similar marketing method. I used PHP to handle the http post request from the form and append a .csv file with each email address that is entered.</p>
+                <p class="card-text"><h6><strong>Technology</strong></h6>
+                  <ul id="tech-logos-1">
+                    <li><i class="fab fa-php"></i> PHP</li>
+                    <li><i class="fas fa-file-csv"></i> CSV</li>
+                  </ul>
+                </p>
+                <a href="https://github.com/Daniel4040/landing-page-1" target="_blank" class="btn btn-secondary">Source Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="about-me" id="about">
       <div class="container col-md-6 mx-auto">
